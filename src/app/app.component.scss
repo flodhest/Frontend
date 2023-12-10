@@ -1,0 +1,54 @@
+
+.html{
+  font-family: 'Orbitron', sans-serif !important;
+  max-height:100%;
+}
+.body{
+  font-family: 'Orbitron', sans-serif !important;
+}
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.mat-toolbar-row {
+  font-weight: 900;
+  display: flex;
+/* Space items between */
+  align-items: center;
+
+}
+
+mat-list-item mat-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+mat-list-item div {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+.background {
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+
+.headline {
+  font-size: 18px;
+
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+/* Add styles for router links */
+.mat-toolbar-row a {
+  font-family: 'Orbitron', sans-serif !important;
+  margin-left: 10px; /* Adjust margin between links */
+  font-weight: 900;
+  font-size: 20px;
+}

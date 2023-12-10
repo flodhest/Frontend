@@ -1,0 +1,12 @@
+<div>
+  <form [formGroup]="excelForm" (ngSubmit)="saveNewExcelData()">
+    <!-- Your existing form controls -->
+    <input type="file" formControlName="excelFile" (change)="onFileChange($event)" />
+    <button type="button" (click)="uploadExcelTemplate()">Upload Excel Template</button>
+    <button type="button" (click)="downloadExcelTemplate()">Download Excel Template</button>
+
+    <button type="submit">Save Excel Data</button>
+  </form>
+
+
+</div>
