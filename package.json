@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "@angular/service-worker": "^16.2.0",
+    "@mui/icons-material": "^5.14.19",
     "@types/node": "^20.10.4",
     "@types/uuid": "^9.0.7",
     "@zxing/library": "^0.20.0",
@@ -38,7 +39,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.2.8",
-    "@angular/cli": "^16.2.9",
+    "@angular/cli": "^17.0.6",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",

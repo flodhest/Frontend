@@ -54,3 +54,13 @@ mat-list-item div {
 }
 
 
+/* Your Angular component styles (app.component.scss) */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.github-icon {
+  color: black; /* Adjust the color to your preference */
+}
