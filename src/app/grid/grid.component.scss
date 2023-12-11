@@ -176,6 +176,40 @@ align-items: center;
   border-left: 1px solid white;
 
 }
+
+
+.jelly__eye {
+	opacity: 0;
+	animation: wink .45s ease-in-out 2s 2 forwards;
+}
+
+.line {
+	stroke-dasharray: 1200;
+	stroke-dashoffset: 1200;
+	animation: dash 2.5s ease-in-out forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1200;
+    stroke-width: 75;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 10;
+  }
+}
+
+@keyframes wink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .container-skillbar2 {
   width: 70%; /* Adjust the width as needed */
 

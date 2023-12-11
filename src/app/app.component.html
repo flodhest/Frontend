@@ -1,26 +1,10 @@
 <div class="wrapper">
   <div class="grid-container">
-
     <mat-toolbar>
       <mat-toolbar-row>
-        <a mat-button routerLink="/grid">
-
-          Hem
-        </a>
-        <a mat-button routerLink="/debt">
-
-          Projekt
-        </a>
-        <a mat-button routerLink="/excel">
-
-          Personligt
-        </a>
-        <a mat-button routerLink="/login">
-
-          Login
-        </a>
-
-
+        <a mat-button routerLink="/grid">Hem</a>
+        <a mat-button routerLink="/excel">Personligt</a>
+        <a mat-button (click)="downloadPdf()">Betyg</a>
       </mat-toolbar-row>
     </mat-toolbar>
   </div>
