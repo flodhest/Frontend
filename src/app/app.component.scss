@@ -1,66 +1,75 @@
-
-.html{
-  font-family: 'Orbitron', sans-serif !important;
-  max-height:100%;
-}
-.body{
-  font-family: 'Orbitron', sans-serif !important;
-}
-.centered-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  justify-content: center;
-}
-
+/* styles.scss (or your global styles file) */
 .mat-toolbar-row {
   font-weight: 900;
+
   display: flex;
-/* Space items between */
   align-items: center;
+  font-family: 'Orbitron', sans-serif !important;
+}
+.wrapper{
+
+    font-family: 'Orbitron', sans-serif !important;
+
 
 }
+.fixed-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Orbitron', sans-serif !important;
+  right: 0;
+  background-color: #DE3163;
 
-mat-list-item mat-icon {
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
-mat-list-item div {
-  display: inline-block;
-  vertical-align: middle;
-  font-weight: 700;
-}
-
-.background {
-  background: #03a9f4;
-  mix-blend-mode: overlay;
+  z-index: 1000;
 }
 
 .headline {
   font-size: 18px;
-
   margin-left: 10px;
+
+  font-family: 'Orbitron', sans-serif !important;
   font-weight: 700;
 }
 
-/* Add styles for router links */
 .mat-toolbar-row a {
   font-family: 'Orbitron', sans-serif !important;
-  margin-left: 10px; /* Adjust margin between links */
+  margin-left: 10px;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 16px;
+}
+.mat-toolbar{
+  font-family: 'Orbitron', sans-serif !important;
+  background-color: #DE3163;
+  color:white;
+
 }
 
-
-/* Your Angular component styles (app.component.scss) */
-.social-links {
+.guide-container {
   display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
-.github-icon {
-  color: black; /* Adjust the color to your preference */
+
+
+.content-container {
+  flex: 1;
+  max-width: 100%;
+  margin-top: 60px; /* Adjust based on your toolbar height */
+}
+
+.footer {
+  /* Your existing styles for the footer */
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #DE3163;
+  font-weight: 900;
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif !important;
+  width: 100%;
+}
+
+/* Add responsive styles */
+@media (max-width: 600px) {
+  /* Add responsive styles if needed */
 }

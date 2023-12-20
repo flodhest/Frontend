@@ -1,13 +1,14 @@
-// grid.component.ts
 import { Component } from '@angular/core';
-import { CommonService } from '../common.service';
+import { CommonService } from 'src/app/common.service';
 
 @Component({
-  selector: 'app-grid',
-  templateUrl: './grid.component.html',
-  styleUrls: ['./grid.component.scss']
+  selector: 'app-section1',
+  standalone: true,
+  imports: [],
+  templateUrl: './section1.component.html',
+
 })
-export class GridComponent {
+export class Section1Component {
   constructor(private commonService: CommonService) {}
 
   // Create a public getter method for commonService

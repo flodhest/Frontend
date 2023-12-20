@@ -23,12 +23,11 @@ export class DebtComponent implements OnInit, OnDestroy {
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
   ngOnDestroy(): void {
-    this.onDestroy$.next();
-    this.onDestroy$.complete();
+
   }
 
   ngOnInit(): void {
-    // Initialization logic
+
   }
 
 }

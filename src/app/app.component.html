@@ -1,19 +1,22 @@
-<!-- Your Angular component template (app.component.html) -->
+<!-- app.component.html -->
 <div class="wrapper">
-  <div class="grid-container">
-    <mat-toolbar>
-      <mat-toolbar-row>
-        <a mat-button routerLink="/grid">Hem</a>
-        <a mat-button routerLink="/excel">Personligt</a>
-        <a mat-button (click)="downloadPdf()">Betyg</a>
-          <a mat-button href="mailto:eric.flodin@aol.com">
-           Mail
-          </a>
-      </mat-toolbar-row>
-    </mat-toolbar>
-  </div>
+  <mat-toolbar color="primary" class="fixed-toolbar">
+    <a mat-button routerLink="/grid">Hem</a>
+    <a mat-button routerLink="/excel">Frontend</a>
+    <a mat-button routerLink="/debt">TypeScript</a>
+    <a mat-button routerLink="/debt">Övrigt</a>
+    <a mat-button href="mailto:eric.flodin@aol.com">Mail</a>
+  </mat-toolbar>
 </div>
 
-<router-outlet></router-outlet>
+<!-- Your page content goes here -->
+<div class="content-container">
+  <router-outlet></router-outlet>
+</div>
 
-
+<div class="footer">
+  <!-- Your footer content goes here -->
+  <mat-toolbar>
+    <span>&copy; 2023 Pinkish Herd</span>
+  </mat-toolbar>
+</div>

@@ -1,0 +1,210 @@
+<!-- Jämförelse mellan Angular, React och Vue -->
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Jämförelse mellan Angular, React och Vue
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <!-- Angular -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Angular
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-icon>info</mat-icon> Interaktivt!
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-panel-description>
+      Fördelar och nackdelar av Angular.
+    </mat-panel-description>
+
+    <mat-list>
+      <!-- Fördelar -->
+      <mat-list-item>
+        <mat-icon mat-list-icon>thumb_up</mat-icon>
+        <h4 mat-line>Fördelar</h4>
+        <p mat-line>
+          - Fullfjädrat ramverk med inbyggd funktionalitet.
+          - Starkt typat, vilket kan förhindra buggar vid utveckling.
+          - Stöd för tvåvägskoppling (two-way data binding).
+        </p>
+      </mat-list-item>
+
+      <!-- Nackdelar -->
+      <mat-list-item>
+        <mat-icon mat-list-icon>thumb_down</mat-icon>
+        <h4 mat-line>Nackdelar</h4>
+        <p mat-line>
+          - Lägre flexibilitet jämfört med mindre ramverk.
+          - Inlärningskurva kan vara brant för nybörjare.
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </mat-expansion-panel>
+
+  <!-- React -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        React
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-icon>info</mat-icon> Interaktivt!
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-panel-description>
+      Fördelar och nackdelar av React.
+    </mat-panel-description>
+
+    <mat-list>
+      <!-- Fördelar -->
+      <mat-list-item>
+        <mat-icon mat-list-icon>thumb_up</mat-icon>
+        <h4 mat-line>Fördelar</h4>
+        <p mat-line>
+          - Virtuell DOM för optimal prestanda.
+          - Stor gemenskapsstöd och många tredjepartsbibliotek.
+          - Enkel integration med andra bibliotek eller ramverk.
+        </p>
+      </mat-list-item>
+
+      <!-- Nackdelar -->
+      <mat-list-item>
+        <mat-icon mat-list-icon>thumb_down</mat-icon>
+        <h4 mat-line>Nackdelar</h4>
+        <p mat-line>
+          - Lägre nivå av abstraktion, vilket kan öka komplexiteten.
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </mat-expansion-panel>
+
+  <!-- Vue -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Vue
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-icon>info</mat-icon> Interaktivt!
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-panel-description>
+      Fördelar och nackdelar av Vue.
+    </mat-panel-description>
+
+    <mat-list>
+      <!-- Fördelar -->
+      <mat-list-item>
+        <mat-icon mat-list-icon>thumb_up</mat-icon>
+        <h4 mat-line>Fördelar</h4>
+        <p mat-line>
+          - Lätt att lära sig och snabb att komma igång.
+          - Enkelt att integrera med befintliga projekt.
+          - Flexibelt och modulärt.
+        </p>
+      </mat-list-item>
+
+      <!-- Nackdelar -->
+      <mat-list-item>
+        <mat-icon mat-list-icon>thumb_down</mat-icon>
+        <h4 mat-line>Nackdelar</h4>
+        <p mat-line>
+          - Mindre ekosystem jämfört med Angular och React.
+          - Kan sakna vissa avancerade funktioner jämfört med Angular.
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </mat-expansion-panel>
+
+  <!-- Sammanfattning -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Sammanfattning
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <mat-panel-description>
+      Valet mellan Angular, React och Vue beror på projektets krav och utvecklarens preferenser. Angular passar bra för stora applikationer med strikta krav på typning och struktur. React är idealiskt för prestandakritiska applikationer och projekt med behov av stora gemenskapens stöd. Vue är ett bra val för mindre till medelstora projekt och när en lätt inlärningskurva är viktig. Varje ramverk har sina styrkor och svagheter, och det bästa valet beror på specifika behov och preferenser.
+    </mat-panel-description>
+  </mat-expansion-panel>
+</mat-expansion-panel>
+
+<!--
+
+## Pakethanterare: Yarn, npm och pnpm
+
+### Npm (Node Package Manager)
+
+**Fördelar:**
+- Standard för Node.js-projekt.
+- Stor gemenskapsstöd och bibliotek.
+- Inbyggt stöd för projektinstallation och hantering av beroenden.
+
+**Nackdelar:**
+- Längre installations- och nedladdningstider.
+- Skapar ibland "node_modules"-mappar som kan bli stora.
+
+### Yarn
+
+**Fördelar:**
+- Skapad för att lösa npm:s problem.
+- Snabbare installations- och nedladdningstider.
+- Bättre kontroll över beroendeförändringar med lock-filer.
+
+**Nackdelar:**
+- Mindre stöd för skript och plugins jämfört med npm.
+
+### Pnpm
+
+**Fördelar:**
+- Använder hårdlänkar för att dela beroenden, vilket minskar diskutrymme.
+- Snabb installation och nedladdning.
+- Enkelt att hantera flera projekt och globala moduler.
+
+**Nackdelar:**
+- Mindre användargemenskap och stöd än npm och Yarn.
+
+## Jämförelse mellan Angular, React och Vue
+
+### Angular
+
+**Fördelar:**
+- Fullfjädrat ramverk med inbyggd funktionalitet.
+- Starkt typat, vilket kan förhindra buggar vid utveckling.
+- Stöd för tvåvägskoppling (two-way data binding).
+
+**Nackdelar:**
+- Lägre flexibilitet jämfört med mindre ramverk.
+- Inlärningskurva kan vara brant för nybörjare.
+
+### React
+
+**Fördelar:**
+- Virtuell DOM för optimal prestanda.
+- Stor gemenskapsstöd och många tredjepartsbibliotek.
+- Enkel integration med andra bibliotek eller ramverk.
+
+**Nackdelar:**
+- Lägre nivå av abstraktion, vilket kan öka komplexiteten.
+
+### Vue
+
+**Fördelar:**
+- Lätt att lära sig och snabb att komma igång.
+- Enkelt att integrera med befintliga projekt.
+- Flexibelt och modulärt.
+
+**Nackdelar:**
+- Mindre ekosystem jämfört med Angular och React.
+- Kan sakna vissa avancerade funktioner jämfört med Angular.
+
+**Sammanfattning:**
+Valet mellan Angular, React och Vue beror på projektets krav och utvecklarens preferenser. Angular passar bra för stora applikationer med strikta krav på typning och struktur. React är idealiskt för prestandakritiska applikationer och projekt med behov av stora gemenskapens stöd. Vue är ett bra val för mindre till medelstora projekt och när en lätt inlärningskurva är viktig. Varje ramverk har sina styrkor och svagheter, och det bästa valet beror på specifika behov och preferenser. -->

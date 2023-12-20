@@ -1,0 +1,93 @@
+<!-- In your Angular component template -->
+<div fxLayout="column" fxLayoutGap="16px" class="mat-body">
+  <!-- # Chapter 8: Uppgradering av Angular -->
+  <div class="mat-display-1"># Chapter 8: Uppgradering av Angular</div>
+
+  <!-- Introduction -->
+  <div class="mat-subheading-2">Introduktion</div>
+  <p>Välkommen till kapitel 8 av vår interaktiva handledning om Angular-uppgradering. I det här kapitlet kommer vi att gå igenom processen att uppgradera Angular från en äldre version (Angular 12) till den senaste stabila versionen (Angular 16). Det är viktigt att hålla Angular-applikationer uppdaterade för att dra nytta av de senaste funktionerna, förbättringarna och säkerhetsuppdateringarna.</p>
+
+  <!-- Introduction -->
+  <div class="mat-subheading-2">Inledning</div>
+  <p>För att få en överblick över applikationen före uppgraderingsprocessen kan du besöka dess offentliga GitHub-lagringsplats på följande länk: <a href="https://github.com/walkingriver/at10dance-angular" class="mat-body-1" target="_blank">GitHub Repo</a>.</p>
+  <p>För att hålla applikationen i synk med Angulars utvecklande förmågor har jag beslutat att uppgradera den till Angular 16. Detta säkerställer att applikationen fortsätter att fungera effektivt och utnyttjar Angulars toppmoderna funktioner.</p>
+
+  <!-- Angular 12.x till 12.y -->
+  <div class="mat-subheading-2">Angular 12.x till 12.y</div>
+  <p>Det första steget var att säkerställa att projektet var på den senaste versionen av Angular 12. Det är viktigt att notera att Angular CLI, under uppdateringsprocessen, förväntar sig att arbeta i en ren repository, vilket innebär att det inte bör finnas några ej bekräftade ändringar i ditt projekt. Detta är av enkel anledning: om något går fel under uppgraderingen är det mycket lättare att återgå till en ren state om alla dina ändringar har bekräftats.</p>
+  <!-- ... Repeat the same structure for the rest of the text -->
+
+</div>
+
+
+<!-- # Chapter 8: Uppgradering av Angular
+
+## Introduktion
+Välkommen till kapitel 8 av vår interaktiva handledning om Angular-uppgradering. I det här kapitlet kommer vi att gå igenom processen att uppgradera Angular från en äldre version (Angular 12) till den senaste stabila versionen (Angular 16). Det är viktigt att hålla Angular-applikationer uppdaterade för att dra nytta av de senaste funktionerna, förbättringarna och säkerhetsuppdateringarna.
+
+## Inledning
+För att få en överblick över applikationen före uppgraderingsprocessen kan du besöka dess offentliga GitHub-lagringsplats på följande länk: [GitHub Repo](https://github.com/walkingriver/at10dance-angular).
+
+För att hålla applikationen i synk med Angulars utvecklande förmågor har jag beslutat att uppgradera den till Angular 16. Detta säkerställer att applikationen fortsätter att fungera effektivt och utnyttjar Angulars toppmoderna funktioner.
+
+## Angular 12.x till 12.y
+Det första steget var att säkerställa att projektet var på den senaste versionen av Angular 12. Det är viktigt att notera att Angular CLI, under uppdateringsprocessen, förväntar sig att arbeta i en ren repository, vilket innebär att det inte bör finnas några ej bekräftade ändringar i ditt projekt. Detta är av enkel anledning: om något går fel under uppgraderingen är det mycket lättare att återgå till en ren state om alla dina ändringar har bekräftats.
+
+En annan kritisk punkt är att se till att alla dina npm-paket är installerade innan du initierar uppgraderingen. Angular CLI undersöker dina nodmoduler för att identifiera vad som behöver uppdateras. Om du inte har alla paket installerade kommer det inte att ha en klar bild av de uppdateringar som är nödvändiga. Detta kan eventuellt leda till ofullständiga uppdateringar eller versionsinkompatibilitet, vilket kan orsaka fel längre fram.
+
+I grund och botten är en ren och uppdaterad repository en förutsättning för en framgångsrik och smärtfri uppgradering. Innan du startar någon uppgradering, se alltid till att din kodbas är fullständigt bekräftad och dina npm-paket är korrekt installerade.
+
+Efter att ha bekräftat en ren repository körde jag följande kommando:
+```bash
+ng update @angular/cli@12 @angular/core@12
+```
+
+Detta kommando uppmanar Angular CLI att uppdatera både Angular CLI-paketet och Angular-kärnpaketet till version 12 i ditt projekt. Detta är ett vanligt första steg i Angular-uppdateringsprocessen, eftersom du vanligtvis vill säkerställa att din CLI och kärnram är synkroniserade när det gäller versionshantering, innan du går vidare till andra beroenden i ditt projekt.
+
+Om den installerade lokala Angular CLI-versionen är äldre än den senaste stabila versionen kommer ett tillfälligt paket att installeras för att utföra uppdateringen. Efter detta kommer paket och beroenden att uppdateras enligt den senaste versionen.
+
+Jag instruerade specifikt CLI att uppdatera till @angular/cli och @angular/core version 12, vilket kommer att uppgradera till den senaste mindre/revisionen av den stora versionen. Därefter bekräftade jag ändringarna genom att köra följande kommando:
+```bash
+git commit -am "Uppdaterade Angular till senaste 12.x"
+```
+
+Eftersom det var en så liten uppgradering hände inte mycket. Angular-schematiska verktyg upptäckte inga nödvändiga kodändringar vid den tiden, vilket inte alltid kommer att vara fallet, som vi säkert kommer att se. Vid den här tiden, och efter varje uppgradering, är det en bra idé att testa din applikation för att säkerställa att allt fungerar som förväntat. Om du har automatiserade tester blir detta steg mycket enklare.
+
+## Angular 12 till Angular 13
+En betydande övergång inträffar när du uppgraderar från Angular 12 till Angular 13. Detta är punkten där Ivy, Angulars senaste renderingspipeline och vy-motor, blir obligatorisk. Ivy introducerades som standardrenderingsmotorn med Angular 9 och ger förbättringar av buntstorlek, felsökning, byggtider och typkontroll. Även om det var valfritt från version 9 till 12 och gav utvecklare gott om tid att övergå, var det inte förrän Angular 13 som den äldre View Engine helt pensionerades.
+
+När du tar steget från Angular 12 till 13 åtar du dig också Ivy. Det är avgörande att förstå att efter Angular 12 finns det ingen återvändo till View Engine. Denna övergång medför både möjligheter och ansvar. Du får tillgång till de framsteg som Ivy medför, men du tar också på dig uppgiften att säkerställa att din kodbas är kompatibel med denna nya motor.
+
+Att uppgradera till Angular 13 innebär att fullt ut omfam
+
+na Ivy. Om du har stora projekt och kodbasen är komplex kan det vara en bra idé att göra en stegvis övergång till Ivy innan du uppgraderar till Angular 13. Detta kan omfatta att migrera komponenter, tjänster och moduler till Ivy-kompatibla format och upprepade tester för att säkerställa att allt fungerar korrekt.
+
+För att genomföra uppgraderingen körde jag följande kommando:
+```bash
+ng update @angular/cli@13 @angular/core@13
+```
+
+Precis som tidigare uppmanade jag Angular CLI att uppdatera till den senaste mindre/revisionen av Angular CLI och Angular Core-version 13. Efter detta följde jag upp med att bekräfta ändringarna i Git.
+
+Denna gång är det möjligt att schematiska verktyg (som `ng update`) kan hitta och föreslå kodändringar relaterade till Ivy-migreringen. Om det är fallet, ta dig tid att granska och testa dessa ändringar noga innan du går vidare. Du kanske också behöver uppdatera eventuella tredjepartsbibliotek eller verktyg som kan vara påverkade av Ivy-övergången.
+
+Efter uppdateringen till Angular 13 är det viktigt att testa applikationen noggrant för att säkerställa att alla funktioner och visuella komponenter fungerar som förväntat. Om du stöter på problem, använd Angulars officiella dokumentation, forum och samhällsresurser för att hitta lösningar.
+
+## Angular 13 till Angular 16
+Att uppgradera från Angular 13 till Angular 16 innebär att övergå från en mindre/revision av 13 till den senaste mindre/revisionen av 16. Detta är en relativt enkel process jämfört med övergången från 12 till 13, eftersom Ivy redan är den aktiva renderingsmotorn.
+
+För att genomföra denna uppgradering körde jag följande kommando:
+```bash
+ng update @angular/cli@16 @angular/core@16
+```
+
+Precis som tidigare uppmanade jag Angular CLI att uppdatera till den senaste mindre/revisionen av Angular CLI och Angular Core-version 16. Efter detta bekräftade jag ändringarna i Git.
+
+Efter att ha uppgraderat till Angular 16 är det avgörande att noggrant testa din applikation igen. Observera att vid den här tiden kan det finnas ytterligare kodändringar som krävs för att säkerställa fullständig kompatibilitet med Angular 16 och eventuella uppdaterade bibliotek eller beroenden.
+
+## Avslutande tankar
+Uppgradering av Angular är en nödvändig process för att hålla din applikation modern och säker. Genom att följa Angulars officiella uppdateringsdokumentation och använda verktyg som Angular CLI och schematiska verktyg kan du göra processen mer strukturerad och hanterbar.
+
+Efter varje uppgradering är det viktigt att testa din applikation noggrant och åtgärda eventuella problem som uppstår. Tänk på att vissa uppgraderingar kan kräva ytterligare åtgärder, som att uppdatera tredjepartsbibliotek eller anpassa kod för att vara kompatibel med de senaste Angular-funktionerna.
+
+Lycka till med din Angular-uppgradering, och tveka inte att söka hjälp från Angular-samhället om du stöter på problem eller har frågor längs vägen. Fortsätt att bygga fantastiska Angular-applikationer! -->

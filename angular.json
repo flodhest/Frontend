@@ -32,7 +32,9 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/styles.scss",
+
+              "src/app/excel/section3/section3.component.css"
             ],
             "scripts": [],
             "serviceWorker": true,

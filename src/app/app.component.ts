@@ -1,24 +1,26 @@
+// app.component.ts
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { CommonService } from './common.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Eric Flodin';
+  isHandset: boolean = false;
 
-  constructor(private router: Router) {}
-
-  downloadPdf(): void {
-    // Assuming your PDF file is located in the assets folder
-    const pdfPath = '/assets/eric.pdf';
-
-    // Construct the full URL
-    const pdfUrl = window.location.origin + pdfPath;
-
-    // Open the PDF in a new tab for download
-    window.open(pdfUrl, '_blank');
+  constructor(private breakpointObserver: BreakpointObserver, private commonService: CommonService) {
+    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe((result) => {
+      this.isHandset = result.matches;
+    });
+  }
+  // Create a public getter method for commonService
+  getCommonService(): CommonService {
+    return this.commonService;
+  }
+  toggleSidebar() {
+    // Implement your logic to toggle the sidebar here
   }
 }
