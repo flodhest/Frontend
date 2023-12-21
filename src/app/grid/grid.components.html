@@ -1,0 +1,23 @@
+<!-- grid.component.html -->
+<div *ngFor="let post of posts">
+  <div class="card">
+    <h1>{{ post.title }}</h1>
+    <br>
+    <p>{{ post.description }}</p>
+    <br>
+    <strong>{{ post.upvotes }}</strong> People like this
+    <span class="fa fa-thumbs-o-up like" (click)="upvote(post)"></span>
+  </div>
+</div>
+
+<form (ngSubmit)="addPost()" class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="control-label">Title</label>
+    <input type="text" class="form-control" [(ngModel)]="title" required>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="control-label">Description</label>
+    <textarea class="form-control" [(ngModel)]="description"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Post</button>
+</form>

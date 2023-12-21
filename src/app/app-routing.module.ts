@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GridComponent } from './grid/grid.component';
+import { GridComponents } from './grid/grid.components';
 import { DebtComponent } from './debt/debt.component';
 import { ExcelComponent } from './excel/excel.component';
 import { Section1Component } from './excel/section1/section1.component';
@@ -8,12 +8,12 @@ import { Section2Component } from './excel/section2/section2.component';
 import { Section3Component } from './excel/section3/section3.component';
 import { Section4Component } from './excel/section4/section4.component';
 import { Section11Component } from './excel/section11/section11.component';
-import { Section14Component } from './excel/section14/section14.component';
 import { Section5Component } from './excel/section5/section5.component';
+import { Section14Component } from './excel/section14/section14.component';
 // Exempel från AppRoutingModule
 // Exempel från AppRoutingModule
 const routes: Routes = [
-  { path: 'grid', component: GridComponent },
+  { path: 'grid', component: GridComponents },
   { path: 'debt', component: DebtComponent },
   { path: 'ovrigt', component: DebtComponent },
   {

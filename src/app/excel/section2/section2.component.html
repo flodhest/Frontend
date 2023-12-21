@@ -1,26 +1,145 @@
-<!-- tutorial.component.html -->
+<div class="framework-container">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="framework-title">Skapa din första Angular-app med Angular CLI</span>
+      </mat-panel-title>
 
-<div class="tutorial-container">
-  <h1>Skapa din första Angular-app med Angular CLI</h1>
+    </mat-expansion-panel-header>
 
-  <div class="tutorial-step" fxLayout="column" fxLayoutGap="20px">
-    <h2>Steg 1: Installera Node.js och NPM</h2>
-    <p>För att komma igång med Angular behöver du installera Node.js och NPM. Besök den officiella webbplatsen
-      för att hämta den senaste versionen. Kontrollera att du har en tillräckligt ny version av Node.js genom att
-      köra kommandot <code>node --version</code>.</p>
-  </div>
+    <mat-panel-description>
+      <span class="framework-description">Fördelar och nackdelar av Angular.</span>
+    </mat-panel-description>
 
-  <!-- ... (Upprepa mönstret för andra steg) -->
+    <mat-list class="pros-cons-list">
+      <!-- Fördelar -->
+      <mat-list class="pros-cons-item">
+        <mat-icon mat-list-icon class="pros-icon">thumb_up</mat-icon>
+        <div>
+          <h4>Fördelar</h4>
+          <p>
+            - Fullfjädrat ramverk med inbyggd funktionalitet.<br>
+            - Starkt typat, vilket kan förhindra buggar vid utveckling.<br>
+            - Stöd för tvåvägskoppling (two-way data binding).
+          </p>
+        </div>
+      </mat-list>
 
-  <div class="tutorial-summary">
-    <h2>Summering (på svenska)</h2>
-    <ol>
-      <li>Installera Node.js och NPM.</li>
-      <li>Installera Angular CLI.</li>
-      <li>Skapa ett nytt Angular-projekt med Angular CLI.</li>
-      <li>Skapa din första komponent.</li>
-      <li>Utforska och förstå projektstrukturen och konfigurationsfiler.</li>
-    </ol>
-    <p>Lycka till med din Angular-resa! 🚀</p>
-  </div>
+      <!-- Nackdelar -->
+      <mat-list class="pros-cons-item">
+        <mat-icon mat-list-icon class="cons-icon">thumb_down</mat-icon>
+        <div>
+          <h4>Nackdelar</h4>
+          <p>
+            - Lägre flexibilitet jämfört med mindre ramverk.<br>
+            - Inlärningskurva kan vara brant för nybörjare.
+          </p>
+        </div>
+      </mat-list>
+    </mat-list>
+  </mat-expansion-panel>
+
+  <!-- Steg 1: Installera Node.js och NPM -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="framework-title">Steg 1: Installera Node.js och NPM</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+      <p>
+        För att komma igång med Angular behöver du installera Node.js och NPM. Besök den officiella webbplatsen för att hämta den senaste versionen. Kontrollera att du har en tillräckligt ny version av Node.js genom att köra kommandot <code>node --version</code>.
+      </p>
+    </mat-panel-description>
+  </mat-expansion-panel>
+
+  <!-- Steg 2: Installera Angular CLI -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="framework-title">Steg 2: Installera Angular CLI</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+      <p>
+        Angular CLI är ett kraftfullt verktyg för att snabbt starta och konfigurera Angular-projekt.<br>
+         Det underlättar processen genom att konfigurera Webpack, tester och paketering automatiskt.<br>
+          Installera Angular CLI genom att köra följande kommando:<br>
+
+        npm install -g &#64;angular/cli<br>
+
+        Efter installationen kan du skapa ett nytt projekt med Angular CLI. Vi använder version 17.0.0 i exemplet, men du kan installera den senaste versionen som Angular CLI tillhandahåller.
+
+        ng new my-app --prefix ns --defaults --no-routing
+
+        Detta skapar en projektstruktur i en mapp som heter "my-app". Navigera till projektmappen och starta din app:
+
+        cd my-app
+        ng serve
+
+        Din Angular-app körs nu lokalt på en inbyggd server med snabb omladdning. När du sparar en fil byggs appen om automatiskt och webbläsaren uppdateras.
+      </p>
+    </mat-panel-description>
+  </mat-expansion-panel>
+
+  <!-- Steg 3: Skapa din första komponent -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="framework-title">Steg 3: Skapa din första komponent</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+      <p>
+        I Angular 15 introducerades funktionen "standalone components", vilket förenklar strukturen av Angular-projekt.
+        <br> Vi kommer att använda denna funktion i vår tutorial.
+
+        Nu, skapa din första komponent med Angular CLI:
+
+        ng generate component my-component
+
+        Detta skapar en komponent och dess relaterade filer. Du kan nu öppna din IDE och utforska den genererade koden.
+      </p>
+    </mat-panel-description>
+  </mat-expansion-panel>
+
+  <!-- Steg 4: Struktur på din Angular-app -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="framework-title">Steg 4: Struktur på din Angular-app</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+      <p>
+        Din Angular-apps rotmapp kommer nu att innehålla flera konfigurationsfiler, inklusive <code>package.json</code>, <code>tsconfig.json</code>, <code>angular.json</code>, och <code>.eslintrc.json</code>. <br>
+        Dessa filer används för att konfigurera och hantera olika aspekter av din app.<br>
+
+        Detta är en grundläggande guide för att starta din första Angular-app med Angular CLI.<br>
+         För mer avancerade funktioner och detaljerad information, följ vår gratis onlineövning "Getting Started!".
+      </p>
+    </mat-panel-description>
+  </mat-expansion-panel>
+
+  <!-- Summering (på svenska) -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <span class="framework-title">Summering</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+      <ol>
+        <li>Installera Node.js och NPM.</li>
+        <li>Installera Angular CLI.</li>
+        <li>Skapa ett nytt Angular-projekt med Angular CLI.</li>
+        <li>Skapa din första komponent.</li>
+        <li>Utforska och förstå projektstrukturen och konfigurationsfiler.</li>
+
+
+        Lycka till med din Angular-resa! 🚀
+      </ol>
+    </mat-panel-description>
+  </mat-expansion-panel>
+
 </div>

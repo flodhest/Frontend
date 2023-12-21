@@ -44,16 +44,15 @@
 
 }
 
-.guide-container {
-  display: flex;
-}
 
 
 
 .content-container {
   flex: 1;
   max-width: 100%;
-  margin-top: 60px; /* Adjust based on your toolbar height */
+/* Adjust based on your toolbar height */
+margin-top:25px;
+
 }
 
 .footer {
@@ -62,11 +61,14 @@
   justify-content: center;
   position: fixed;
   bottom: 0;
-  background-color: #DE3163;
+  background-color: white;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Orbitron', sans-serif !important;
+  border-top: 1px solid #DE3163;
   width: 100%;
+  color:#DE3163;
+  height: 3.2rem;
 }
 
 /* Add responsive styles */

@@ -1,14 +1,13 @@
+// section3.component.ts
+
 import { Component } from '@angular/core';
-import { MatStepperModule } from '@angular/material/stepper';
+
 @Component({
   selector: 'app-section5',
-  standalone: true,
-  imports: [],
   templateUrl: './section5.component.html',
-
+  styleUrls: ['./section5.component.scss']
 })
+
 export class Section5Component {
-  completeTutorial() {
-    alert('Tutorial completed! 🚀');
-  }
+  // Component logic goes here...
 }

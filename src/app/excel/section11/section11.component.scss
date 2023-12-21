@@ -1,16 +1,53 @@
-.container {
-  margin-top: 20px;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.card {
+
+.framework-container {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+
+}
+
+.framework-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.framework-description {
   margin-bottom: 20px;
+  color: #555;
 }
 
-.card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
+.pros-cons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.collection-item {
-  font-size: 1.2rem;
+.pros-cons-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pros-icon,
+.cons-icon {
+  margin-right: 10px;
+  color: #4caf50; /* green for pros */
+}
+
+.cons-icon {
+  color: #f44336; /* red for cons */
+}
+
+.framework-summary {
+
+  color: #777;
 }
