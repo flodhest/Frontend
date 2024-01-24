@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1706127862823,
-  "index": "C:/Program Files/Git/Frontend/index.html",
+  "timestamp": 1706130096900,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,11 +11,11 @@
         "ignoreVary": true
       },
       "urls": [
-        "C:/Program Files/Git/Frontend/index.html",
-        "C:/Program Files/Git/Frontend/main.09302bee5b14e66b.js",
-        "C:/Program Files/Git/Frontend/manifest.webmanifest",
-        "C:/Program Files/Git/Frontend/polyfills.5a92bdcb3da31acc.js",
-        "C:/Program Files/Git/Frontend/runtime.82fe9d50a90afbd0.js"
+        "/index.html",
+        "/main.09302bee5b14e66b.js",
+        "/manifest.webmanifest",
+        "/polyfills.5a92bdcb3da31acc.js",
+        "/runtime.82fe9d50a90afbd0.js"
       ],
       "patterns": []
     },
@@ -27,7 +27,7 @@
         "ignoreVary": true
       },
       "urls": [
-        "C:/Program Files/Git/Frontend/assets/css/style.scss"
+        "/assets/css/style.scss"
       ],
       "patterns": []
     }
@@ -49,12 +49,12 @@
     }
   ],
   "hashTable": {
-    "C:/Program Files/Git/Frontend/assets/css/style.scss": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "C:/Program Files/Git/Frontend/index.html": "fba0d0b753eb60b75de393b49d408360e00032a6",
-    "C:/Program Files/Git/Frontend/main.09302bee5b14e66b.js": "34f2e0230117defdb3a76ce80a5ae6955f4343d4",
-    "C:/Program Files/Git/Frontend/manifest.webmanifest": "db158c84c40a937d120234bd2388813e65052257",
-    "C:/Program Files/Git/Frontend/polyfills.5a92bdcb3da31acc.js": "5d81c9799ddbf874702c25a45a2e3ba6b4caa025",
-    "C:/Program Files/Git/Frontend/runtime.82fe9d50a90afbd0.js": "a0da242461f50e4fa8f034fe321873740d16bbd6"
+    "/assets/css/style.scss": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/index.html": "5770140060ef8528ec4e79adfef0e85514d37ad3",
+    "/main.09302bee5b14e66b.js": "34f2e0230117defdb3a76ce80a5ae6955f4343d4",
+    "/manifest.webmanifest": "db158c84c40a937d120234bd2388813e65052257",
+    "/polyfills.5a92bdcb3da31acc.js": "5d81c9799ddbf874702c25a45a2e3ba6b4caa025",
+    "/runtime.82fe9d50a90afbd0.js": "a0da242461f50e4fa8f034fe321873740d16bbd6"
   },
   "navigationUrls": [
     {
