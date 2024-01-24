@@ -4,8 +4,6 @@ import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatStepperModule } from '@angular/material/stepper';
@@ -27,7 +25,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { APP_INITIALIZER, PLATFORM_ID } from '@angular/core';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { GridComponents } from './grid/grid.components';
@@ -45,7 +42,6 @@ import { GridComponents } from './grid/grid.components';
     MatSnackBarModule,
     MatExpansionModule,
     MatSliderModule,
-    FlexLayoutModule,
     MatListModule,
     MatToolbarModule,
     MatStepperModule,

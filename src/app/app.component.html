@@ -1,14 +1,21 @@
-<div class="page-container"><!-- app.component.html -->
-<div class="footer">
-  <mat-toolbar color="primary" class="footer">
-    <a mat-button routerLink="/grid">Home</a>
+<div class="page-container">
+  <!-- Header -->
+  <div class="header">
+    <mat-toolbar color="primary">
+      <!-- Add your header content here -->
+      <span>	  Pikish Herd - Developing gasps</span>
+    </mat-toolbar>
+  </div>
 
-  </mat-toolbar>
-</div>
+  <!-- Footer -->
+  <div class="footer">
+    <mat-toolbar color="primary">
 
-<!-- Your page content goes here -->
-<div class="content-container">
-  <router-outlet></router-outlet>
-</div>
+    </mat-toolbar>
+  </div>
 
+  <!-- Your page content goes here -->
+  <div class="content-container">
+    <router-outlet></router-outlet>
+  </div>
 </div>
