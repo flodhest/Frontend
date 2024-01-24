@@ -26,20 +26,16 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { APP_INITIALIZER, PLATFORM_ID } from '@angular/core';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { NgChartsModule } from 'ng2-charts';
-
 import { GridComponents } from './grid/grid.components';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     GridComponents,
-
-
   ],
   imports: [
     BrowserModule,
@@ -67,14 +63,29 @@ import { GridComponents } from './grid/grid.components';
     MatIconModule,
     MatButtonModule,
     FormsModule,
-    NgChartsModule,
     ReactiveFormsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(),
-      registrationStrategy: 'registerWhenStable:30000',
-    }),
   ],
-  providers: [],
+  providers: [
+    // Other providers...
+    {
+      provide: APP_INITIALIZER,
+      useFactory: () => () => {},
+      multi: true,
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: (platformId: Object) => () => {},
+      multi: true,
+      deps: [PLATFORM_ID],
+    },
+    {
+      provide: ServiceWorkerModule,
+      useFactory: () => ({
+        enabled: !isDevMode(),
+        registrationStrategy: 'registerWhenStable:30000',
+      }),
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

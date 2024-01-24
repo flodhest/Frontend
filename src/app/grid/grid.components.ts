@@ -10,12 +10,9 @@ import { Component } from '@angular/core';
 export class GridComponents {
 
   constructor() {
-    this.title = ''; // Initialize title
-    this.description = ''; // Initialize description
+
   }
 
-  title: string;
-  description: string;
 
 
 }

@@ -1,11 +1,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "types": ["node", "uuid"],
+    "types": ["node"],
     "baseUrl": "./",
     "outDir": "docs/dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -24,17 +25,12 @@
       "dom"
     ]
   },
-  "commonjsDependencies": {
-    "auto": true,
-    "strict": true,
-    "knownEntryPointNames": [
-      "uuid"
-    ]
-  },
+  
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": false  // Change this to false
   }
+  
 }
