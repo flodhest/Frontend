@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1706121025856,
-  "index": "/Frontend/index.html",
+  "timestamp": 1706122817202,
+  "index": "C:/Program Files/Git/Frontend/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,11 +11,11 @@
         "ignoreVary": true
       },
       "urls": [
-        "/Frontend/index.html",
-        "/Frontend/main.09302bee5b14e66b.js",
-        "/Frontend/manifest.webmanifest",
-        "/Frontend/polyfills.5a92bdcb3da31acc.js",
-        "/Frontend/runtime.82fe9d50a90afbd0.js"
+        "C:/Program Files/Git/Frontend/index.html",
+        "C:/Program Files/Git/Frontend/main.09302bee5b14e66b.js",
+        "C:/Program Files/Git/Frontend/manifest.webmanifest",
+        "C:/Program Files/Git/Frontend/polyfills.5a92bdcb3da31acc.js",
+        "C:/Program Files/Git/Frontend/runtime.82fe9d50a90afbd0.js"
       ],
       "patterns": []
     },
@@ -26,7 +26,9 @@
       "cacheQueryOptions": {
         "ignoreVary": true
       },
-      "urls": [],
+      "urls": [
+        "C:/Program Files/Git/Frontend/assets/css/style.scss"
+      ],
       "patterns": []
     }
   ],
@@ -47,11 +49,12 @@
     }
   ],
   "hashTable": {
-    "/Frontend/index.html": "d3b34f52e32afb7d8dc898d2fed6608c404497d2",
-    "/Frontend/main.09302bee5b14e66b.js": "34f2e0230117defdb3a76ce80a5ae6955f4343d4",
-    "/Frontend/manifest.webmanifest": "db158c84c40a937d120234bd2388813e65052257",
-    "/Frontend/polyfills.5a92bdcb3da31acc.js": "5d81c9799ddbf874702c25a45a2e3ba6b4caa025",
-    "/Frontend/runtime.82fe9d50a90afbd0.js": "a0da242461f50e4fa8f034fe321873740d16bbd6"
+    "C:/Program Files/Git/Frontend/assets/css/style.scss": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "C:/Program Files/Git/Frontend/index.html": "fba0d0b753eb60b75de393b49d408360e00032a6",
+    "C:/Program Files/Git/Frontend/main.09302bee5b14e66b.js": "34f2e0230117defdb3a76ce80a5ae6955f4343d4",
+    "C:/Program Files/Git/Frontend/manifest.webmanifest": "db158c84c40a937d120234bd2388813e65052257",
+    "C:/Program Files/Git/Frontend/polyfills.5a92bdcb3da31acc.js": "5d81c9799ddbf874702c25a45a2e3ba6b4caa025",
+    "C:/Program Files/Git/Frontend/runtime.82fe9d50a90afbd0.js": "a0da242461f50e4fa8f034fe321873740d16bbd6"
   },
   "navigationUrls": [
     {
