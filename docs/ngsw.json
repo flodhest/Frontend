@@ -1,0 +1,63 @@
+{
+  "configVersion": 1,
+  "timestamp": 1706121025856,
+  "index": "/Frontend/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Frontend/index.html",
+        "/Frontend/main.09302bee5b14e66b.js",
+        "/Frontend/manifest.webmanifest",
+        "/Frontend/polyfills.5a92bdcb3da31acc.js",
+        "/Frontend/runtime.82fe9d50a90afbd0.js"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api",
+      "patterns": [
+        "\\/api\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 86400000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/Frontend/index.html": "d3b34f52e32afb7d8dc898d2fed6608c404497d2",
+    "/Frontend/main.09302bee5b14e66b.js": "34f2e0230117defdb3a76ce80a5ae6955f4343d4",
+    "/Frontend/manifest.webmanifest": "db158c84c40a937d120234bd2388813e65052257",
+    "/Frontend/polyfills.5a92bdcb3da31acc.js": "5d81c9799ddbf874702c25a45a2e3ba6b4caa025",
+    "/Frontend/runtime.82fe9d50a90afbd0.js": "a0da242461f50e4fa8f034fe321873740d16bbd6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/dashboard\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
