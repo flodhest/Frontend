@@ -28,11 +28,15 @@ import { APP_INITIALIZER, PLATFORM_ID } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { GridComponents } from './grid/grid.components';
+import { MatCardModule } from '@angular/material/card';
+
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    GridComponents,
+    GridComponents
   ],
   imports: [
     BrowserModule,
@@ -41,15 +45,18 @@ import { GridComponents } from './grid/grid.components';
     HttpClientModule,
     MatSnackBarModule,
     MatExpansionModule,
+    MatCardModule,
     MatSliderModule,
     MatListModule,
     MatToolbarModule,
+    MatTooltipModule,
     MatStepperModule,
     MatDialogModule,
     MatIconModule,
     MatSidenavModule,
     MatListModule,
     MatSelectModule,
+    RouterModule,
     MatInputModule,
     LayoutModule,
     MatFormFieldModule,
@@ -70,7 +77,7 @@ import { GridComponents } from './grid/grid.components';
     },
     {
       provide: APP_INITIALIZER,
-      useFactory: (platformId: Object) => () => {},
+      useFactory: () => () => {},
       multi: true,
       deps: [PLATFORM_ID],
     },

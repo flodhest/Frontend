@@ -1,6 +1,5 @@
-// app.component.ts
+// Inside your app.component.ts file
 import { Component } from '@angular/core';
-
 
 @Component({
   selector: 'app-root',
@@ -9,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  constructor() {}
 
-  constructor() {
-
+  sendEmail() {
+    window.location.href = 'mailto:info@pinkishherd.se';
   }
-
 }

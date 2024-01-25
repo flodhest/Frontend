@@ -4,7 +4,7 @@ import { GridComponents } from './grid/grid.components';
 
 const routes: Routes = [
   { path: 'grid', component: GridComponents },
-  { path: '', redirectTo: '/grid', pathMatch: 'full' },
+  // { path: '', redirectTo: '/grid', pathMatch: 'full' },
 
 ];
 

@@ -1,37 +1,164 @@
+/* Custom styles for the button */
+button.mat-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: 'Orbitron', sans-serif !important;
+
+  /* Hover effect */
+  &:hover {
+    background-color: #512da8;
+    /* Darker color on hover */
+  }
+}
+
+.page-container {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+  color: transparent !important;
+  border: 5px dotted white;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.wrapper-elephant {
+  background-image: url("https://wallpapercave.com/wp/VPuFyGz.jpg");
+  background-blend-mode: multiply;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Additional Effects */
+.wrapper-elephant::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Add a semi-transparent overlay */
+}
+
+.wrapper-elephant h1 {
+  color: white;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  /* Add text shadow */
+}
+
+/* Cool Blend Mode for Child Elements */
+.wrapper-elephant .cool-element {
+  mix-blend-mode: saturation;
+}
+
+/* Hover Animation */
+// .wrapper-elephant:hover {
+//   transform: scale(1.05);
+//   transition: transform 0.5s ease-in-out;
+// }
+
+.line {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: dash 2.5s ease-in-out forwards;
+}
+
+.jelly__eye {
+  opacity: 0;
+  animation: wink 0.45s ease-in-out 2s 2 forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1200;
+    stroke-width: 75;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 10;
+  }
+}
+
+@keyframes wink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .footer {
-  /* Your existing styles for the footer */
   display: flex;
   justify-content: center;
   position: fixed;
   bottom: 0;
-  left: 0; /* Adjust to left instead of min-width */
-  right: 0; /* Adjust to right instead of min-width */
-  background-color: #DE3163;
-  font-weight: 900;
-  font-size: 12px;
+  border-top: 2px solid #DE3163;
   font-family: 'Orbitron', sans-serif !important;
-  border-top: 1px solid #DE3163;
+  overflow: hidden;
+  height:40px;
+}
+.mat-toolbar {
+  font-family: 'Orbitron', sans-serif !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  display: flex;
+  border-right: 2px solid #DE3163;
+  height:40px;
+  font-size: 14px;
+}
 
-  height: 3.2rem;
+.mat-toolbar-row {
+  font-family: 'Orbitron', sans-serif !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  display: flex;
+
+}
+
+.footer-text2{
+padding-bottom: 20px;
+
 }
 
 .header {
-
+  overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center !important;
   align-items: center;
   position: fixed;
   left: 0;
-  
-  right: 0;
-  background-color: #DE3163;
+
   font-weight: 0;
+  background-color: transparent;
   top: 0;
-  color:white;
-  font-size: 16px;
-  letter-spacing: 1px;
+  color: white;
+  z-index: 11;
+  font-size: 10px;
+  border-bottom: 2px solid #DE3163;
+
+
+
   font-family: 'Orbitron', sans-serif !important;
-  height: 3.2rem;
 }
 
 /* Add responsive styles */
