@@ -24,16 +24,27 @@
 </mat-card>
 </div>
 
+
+
+
 <!-- Footer -->
 <div class="footer">
   <mat-toolbar color="secondary">
-    <mat-toolbar-row mat-raised-button matTooltip="Mail to info@pinkishherd.se">
-
-     <span class="footer-text2"> On top of the codechain</span>
+    <mat-toolbar-row> <mat-list-item matTooltip="Mail to info@pinkishherd.se" [routerLink]="'/repo1'">
+      <span class="footer-text2">Rust<span class="footer-text3">CLI</span></span>
+  </mat-list-item>  </mat-toolbar-row>
+      <mat-toolbar-row>
+      <a mat-list-item="Check out Rust2React Repository" [href]="'https://github.com/flodhest/Rust2ReactCLI'" target="_blank">
+        <span class="footer-text2">Rust<span class="footer-text3">2</span>React</span>
+      </a>  </mat-toolbar-row>
+      <mat-toolbar-row>
+      <a mat-list-item ="Check out Rust2Angular Repository" [href]="'https://github.com/flodhest/Rust2AngularCLI'" target="_blank">
+        <span class="footer-text2">Rust<span class="footer-text3">2</span>Angular</span>
+      </a>
     </mat-toolbar-row>
   </mat-toolbar>
-
 </div>
+
 
 <!-- Your page content goes here -->
 <router-outlet></router-outlet>
